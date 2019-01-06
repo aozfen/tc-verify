@@ -29,10 +29,10 @@
   "homepage": "https://github.com/aozfen/tc-verify#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "soap": "^0.25.0"
   }
 }
