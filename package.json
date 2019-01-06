@@ -1,0 +1,38 @@
+{
+  "name": "tc-verify",
+  "version": "1.0.0",
+  "description": "Türkiye Cumhuriyetine kayıtlı bireylerin TC Kimlik Numarasının doğruluğunu kontrol etmektedir",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "npm run build && node ./build/index.js",
+    "start:dev": "nodemon --exec babel-node ./src/index.js",
+    "test": "mocha ./test/**/*.spec.js --timeout 20000 --require babel-register",
+    "clean": "rd /s /q build && mkdir build",
+    "build": "npm run clean && babel -d ./build ./src -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aozfen/tc-verify.git"
+  },
+  "keywords": [
+    "tc",
+    "kimlik",
+    "doğrula",
+    "kimlik",
+    "no"
+  ],
+  "author": "Ahmet Özfen - ahmet.ozfen@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aozfen/tc-verify/issues"
+  },
+  "homepage": "https://github.com/aozfen/tc-verify#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "soap": "^0.25.0"
+  }
+}

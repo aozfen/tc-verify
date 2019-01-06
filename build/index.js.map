@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["module","exports","TcVerify"],"mappings":";;AAAA;;AACA;;;;;;AAEAA,OAAOC,OAAP,GAAkBC,kBAAlB","file":"index.js","sourcesContent":["import 'babel-polyfill';\nimport TcVerify from './TcVerify';\n\nmodule.exports =  TcVerify;"]}
